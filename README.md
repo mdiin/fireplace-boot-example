@@ -1,5 +1,7 @@
 # fireplace.vim and boot build tool
 
+Issue that gave rise to this repository: [fireplace.vim issue #185](https://github.com/tpope/vim-fireplace/issues/185).
+
 This repository is intended for experimentation with [fireplace.vim](https://github.com/tpope/vim-fireplace)
 in combination with the [boot](https://github.com/boot-clj/boot) build tool; specifically the ClojuresScript
 workflow implemented by [adzerk](https://github.com/adzerk/boot-cljs-repl).
