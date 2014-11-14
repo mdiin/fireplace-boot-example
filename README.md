@@ -1,3 +1,7 @@
+# UPDATE:
+
+This repo now demonstrates a boot task to use with fireplace.vim. See usage.
+
 # fireplace.vim and boot build tool
 
 Issue that gave rise to this repository: [fireplace.vim issue #185](https://github.com/tpope/vim-fireplace/issues/185).
@@ -14,17 +18,11 @@ To get up and running, follow these steps:
 
 1. In a terminal, run `boot watch cljs-repl cljs -usO none reload` to start a 
 2. In a browser, open `target/index.html`
-2. `vim build.boot`
-3. `:set ft=clojure`
+3. Open any of the files in `src/cljs` with vim
 4. `:Connect` with the nREPL port from step 1
-5. `cqp` and invoke `(require '[adzerk.boot-cljs-repl :refer :all])`
-6. `cqp` and invoke `(start-repl)`
+5. `:Piggieback (boot.user/repl-env)`
 
-You should now have a browser-connected REPL from the `user` namespace, and
-the browser console should say "Opened Websocket REPL connection".
-
-If you try switching to a different namespace, e.g. `fireplace-boot-example`,
-you should see that the browser REPL is not available there.
+You should now have a browser-connected REPL and the browser console should say "Opened Websocket REPL connection".
 
 ## License
 
